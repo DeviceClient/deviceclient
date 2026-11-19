@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080f1b">
+  <title>DeviceClient — Take control</title>
+  <meta name="description" content="DeviceClient — клиент для Minecraft с настраиваемыми Visuals, HUD и Utilities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">D</span>
+      <span>DEVICE<span class="brand-light">CLIENT</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#features">Возможности</a>
+      <a href="#showcase">Интерфейс</a>
+      <a href="#about">О проекте</a>
+      <a class="nav-download" href="#download">Скачать <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> MINECRAFT CLIENT · 1.21.4</div>
+        <h1>PLAY<br><span>YOUR WAY.</span></h1>
+        <p class="hero-text">Твой Minecraft. Твои настройки. Твой стиль.<br>Знакомься с DeviceClient — клиентом, который подстраивается под тебя.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download">Скачать клиент <span>↗</span></a>
+          <a class="button button-ghost" href="#features">Изучить возможности</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>1.21.4</strong><span>Версия Minecraft</span></div>
+          <i></i>
+          <div><strong>FABRIC</strong><span>Загрузчик</span></div>
+          <i></i>
+          <div><strong>YOUR STYLE</strong><span>Твоя настройка</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Декоративная демонстрация интерфейса DeviceClient">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="glow-core"></div>
+        <div class="client-window">
+          <div class="window-top"><div class="window-dots"><b></b><b></b><b></b></div><span>DEVICECLIENT / MENU</span><span class="window-version">1.1.0</span></div>
+          <div class="window-body">
+            <aside class="window-side">
+              <div class="side-logo">D<span>.</span></div>
+              <div class="side-icon active">◈</div><div class="side-icon">▦</div><div class="side-icon">⌘</div><div class="side-icon">⚙</div>
+            </aside>
+            <div class="window-content">
+              <div class="window-heading"><div><small>WELCOME BACK</small><h3>Visual modules</h3></div><span class="online-pill">● ACTIVE</span></div>
+              <div class="mock-module selected"><span class="module-symbol">◉</span><div><b>Target ESP</b><small>Highlight your target</small></div><span class="switch on"></span></div>
+              <div class="mock-module"><span class="module-symbol">⌁</span><div><b>Motion Trails</b><small>Custom movement effects</small></div><span class="switch on"></span></div>
+              <div class="mock-module"><span class="module-symbol">◎</span><div><b>Jump Circle</b><small>Visual landing indicator</small></div><span class="switch"></span></div>
+              <div class="mock-footer"><span>ACCENT COLOR</span><div class="color-dots"><b></b><b></b><b></b><b></b></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="float-tag tag-top"><span>✦</span> CUSTOM UI</div>
+        <div class="float-tag tag-bottom"><span class="status-dot"></span> BUILT FOR YOU</div>
+      </div>
+      <div class="scroll-hint"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="feature-section section" id="features">
+      <div class="section-heading">
+        <div><div class="eyebrow">MADE TO FIT YOUR GAME</div><h2>Больше контроля.<br><span>Меньше ограничений.</span></h2></div>
+        <p>Собирай собственный игровой интерфейс: включай нужные функции, настраивай внешний вид и оставляй только то, чем пользуешься.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large"><div class="feature-icon">◈</div><span class="card-index">01 / VISUALS</span><h3>Визуальные эффекты</h3><p>Настраиваемые визуальные модули, эффекты и отображение игровых объектов.</p><div class="card-decoration rings"></div></article>
+        <article class="feature-card"><div class="feature-icon">▦</div><span class="card-index">02 / HUD</span><h3>Твой HUD</h3><p>Размещай элементы интерфейса так, как удобно именно тебе.</p><div class="mini-hud"><span>FPS <b>240</b></span><span>XYZ <b>120 64 -32</b></span></div></article>
+        <article class="feature-card"><div class="feature-icon">⌘</div><span class="card-index">03 / UTILITIES</span><h3>Полезные инструменты</h3><p>Дополнительные функции, которые помогают настроить игровой процесс.</p><div class="utility-lines"><i></i><i></i><i></i></div></article>
+      </div>
+    </section>
+
+    <section class="showcase section" id="showcase">
+      <div class="showcase-intro">
+        <div class="eyebrow">ONE CLIENT. YOUR RULES.</div>
+        <h2>Настрой<br><span>каждую деталь.</span></h2>
+        <p>Переключай категории и знакомься с возможностями DeviceClient.</p>
+        <div class="tab-list" role="tablist" aria-label="Категории модулей">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="visuals">Visuals <span>01</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="hud">HUD <span>02</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="utilities">Utilities <span>03</span></button>
+        </div>
+      </div>
+      <div class="showcase-panel">
+        <div class="panel-top"><span class="panel-label">DEVICECLIENT / MODULES</span><span class="panel-live">● PREVIEW</span></div>
+        <div class="panel-content" id="modulePreview">
+          <div class="preview-title"><span>VISUALS</span><b>Visual modules</b><small>Choose what you want to see</small></div>
+          <div class="preview-row"><span class="preview-symbol">◉</span><span><b>Target ESP</b><small>Target highlight</small></span><span class="switch on"></span></div>
+          <div class="preview-row"><span class="preview-symbol">⌁</span><span><b>Motion Trails</b><small>Movement effects</small></span><span class="switch on"></span></div>
+          <div class="preview-row"><span class="preview-symbol">◎</span><span><b>Jump Circle</b><small>Landing indicator</small></span><span class="switch"></span></div>
+          <div class="preview-row"><span class="preview-symbol">◇</span><span><b>Custom Sky</b><small>Sky appearance</small></span><span class="switch"></span></div>
+        </div>
+        <div class="panel-bottom"><span>PERSONALIZE YOUR EXPERIENCE</span><span class="accent-line"></span></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-mark">D<span>.</span></div>
+      <div><div class="eyebrow">ABOUT DEVICECLIENT</div><h2>Создан с вниманием<br>к <span>деталям.</span></h2><p>DeviceClient — развивающийся проект с собственным интерфейсом, настраиваемыми модулями и узнаваемым стилем. Это только начало.</p></div>
+    </section>
+
+    <section class="download-section section" id="download">
+      <div class="download-card">
+        <div class="eyebrow"><span class="status-dot"></span> READY WHEN YOU ARE</div>
+        <h2>Твой следующий<br><span>уровень игры.</span></h2>
+        <p>DeviceClient для Minecraft 1.21.4 · Fabric</p>
+        <a class="button button-primary" href="mailto:deviceclient@example.com?subject=DeviceClient%20download">Скоро доступно <span>↗</span></a>
+        <small class="download-note">Ссылка на скачивание появится после подготовки релиза.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">D</span><span>DEVICE<span class="brand-light">CLIENT</span></span></a><span>© 2026 DEVICECLIENT. ALL RIGHTS RESERVED.</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
